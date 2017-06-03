@@ -54,6 +54,10 @@ module.exports = {
                 ]
             },
             {
+                test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+                loader: 'url-loader?limit=100000'
+            },
+            {
                 test: /\.(png|jpg|gif|woff|woff2|ttf|svg|eot)$/,
                 loader: 'file-loader?name=assets/[name]-[hash:6].[ext]'
             },

@@ -5,7 +5,7 @@
   "main": "wwwroot/index.html",
   "author": "",
   "license": "ISC",
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/RajuKottedi/AngularWithMaterial.git"
   },
@@ -22,25 +22,27 @@
     "test": "karma start"
   },
   "dependencies": {
+    "@angular/animations": "4.1.3",
     "@angular/common": "4.1.3",
     "@angular/compiler": "4.1.3",
     "@angular/compiler-cli": "4.1.3",
-    "@angular/platform-server": "4.1.3",
     "@angular/core": "4.1.3",
     "@angular/forms": "4.1.3",
     "@angular/http": "4.1.3",
+    "@angular/material": "^2.0.0-beta.6",
     "@angular/platform-browser": "4.1.3",
     "@angular/platform-browser-dynamic": "4.1.3",
+    "@angular/platform-server": "4.1.3",
     "@angular/router": "4.1.3",
     "@angular/upgrade": "4.1.3",
-    "@angular/animations": "4.1.3",
     "angular-in-memory-web-api": "0.3.1",
+    "bootstrap": "^3.3.7",
     "core-js": "2.4.1",
+    "hammerjs": "^2.0.8",
+    "ie-shim": "~0.1.0",
     "reflect-metadata": "0.1.10",
     "rxjs": "5.3.0",
-    "zone.js": "0.8.8",
-    "bootstrap": "^3.3.7",
-    "ie-shim": "~0.1.0"
+    "zone.js": "0.8.8"
   },
   "devDependencies": {
     "@types/node": "7.0.13",

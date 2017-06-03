@@ -11,11 +11,17 @@ import { HomeModule } from './home/home.module';
 import { Configuration } from './app.constants';
 import { AppRoutes } from './app.routes';
 
+import 'hammerjs';
+import { MaterialModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppComponent } from './app.component';
 
 @NgModule({
     imports: [
         BrowserModule,
+        MaterialModule,
+        BrowserAnimationsModule,
         AppRoutes,
         SharedModule,
         CoreModule.forRoot(),
