@@ -1,0 +1,20 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+ "files.autoSaveDelay": 1500,
+ "files.autoSave": "afterDelay",
+ "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "node_modules": true,
+        "README.md": true,
+        "dest/*.js.map": true,
+        ".vscode": false,
+        "**/angularApp/**/*.map": true,
+        "**/angularApp/**/*.js": true,
+        "**/angularApp/**/**/*.js": true,
+        "**/wwwroot/": true,
+        "**/obj/": true,
+        "**/bin/": true,
+        "**.lock": true
+ }   
+}
