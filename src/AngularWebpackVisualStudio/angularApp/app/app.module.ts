@@ -12,7 +12,8 @@ import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { JokeComponent } from './shared/joke.component';
+import { QuizComponent } from './shared/quiz.component';
+import { QuizListComponent } from './quiz/quiz-list.component';
 
 @NgModule({
     imports: [
@@ -24,7 +25,8 @@ import { JokeComponent } from './shared/joke.component';
 
     declarations: [
         AppComponent,
-        JokeComponent
+        QuizComponent,
+        QuizListComponent
     ],
 
     bootstrap: [AppComponent],
