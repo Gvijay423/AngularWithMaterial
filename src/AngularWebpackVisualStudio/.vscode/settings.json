@@ -15,6 +15,9 @@
         "**/wwwroot/": true,
         "**/obj/": true,
         "**/bin/": true,
-        "**.lock": true
+        "**.lock": true,
+        "**.user": true,
+        "**.csproj": true,
+        "runtimeconfig.template.json": true
  }   
 }
