@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { QuizComponent } from './shared/quiz.component';
 import { QuizListComponent } from './quiz/quiz-list.component';
+import { QuizFormComponent } from './shared/quiz-form.component';
 
 @NgModule({
     imports: [
@@ -26,7 +27,8 @@ import { QuizListComponent } from './quiz/quiz-list.component';
     declarations: [
         AppComponent,
         QuizComponent,
-        QuizListComponent
+        QuizListComponent,
+        QuizFormComponent
     ],
 
     bootstrap: [AppComponent],

@@ -1,0 +1,16 @@
+<md-card>
+    <md-card-title>Add Question & Answer</md-card-title>
+    <md-card-content>
+        <md-input-container class="full-width">
+          <input mdInput placeholder="Question" #question>
+        </md-input-container>
+      <p> 
+        <md-input-container class="full-width">
+          <input mdInput placeholder="Answer" #answer>
+        </md-input-container>
+      </p>
+    </md-card-content>
+    <md-card-actions>
+      <button md-raised-button (click)="createQuiz(question.value, answer.value)">Create</button>
+    </md-card-actions>
+</md-card>
