@@ -13,13 +13,14 @@ export class QuizListComponent {
     quizlist: Quiz[];
 
     constructor() {
-        this.quizlist = [
-           new Quiz("Question 1", "Answer 1"),
-           new Quiz("Question 2", "Answer 2")
-        ];
+        this.quizlist = [];
     }
 
-    addQuiz(quiz: Quiz) {
-        this.quizlist.unshift(quiz);
+    addQuiz() {
+        this.quizlist.unshift(new Quiz("Question 3", "Answer 3"));
+    }
+
+    clearQuiz() {
+        this.quizlist = [];
     }
 }

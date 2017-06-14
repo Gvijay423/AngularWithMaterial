@@ -1,2 +1,4 @@
-<quiz-form (quizCreated)="addQuiz($event)"></quiz-form>
+<!--<quiz-form (quizCreated)="addQuiz($event)"></quiz-form>-->
 <quiz *ngFor="let q of quizlist" [quiz]="q"></quiz>
+<button md-raised-button (click)="addQuiz()">Add Quiz</button>
+<button md-raised-button (click)="clearQuiz()">Clear Quiz</button>
