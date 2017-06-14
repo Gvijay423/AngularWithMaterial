@@ -8,7 +8,8 @@
     AfterContentChecked,
     AfterViewInit,
     AfterViewChecked,
-    OnDestroy
+    OnDestroy,
+    SimpleChanges
 } from '@angular/core';
 
 import {Quiz} from './quiz';
@@ -33,8 +34,15 @@ OnDestroy {
         console.log(`new - data is ${this.data}`);
     }
 
-    ngOnChanges() {
+    ngOnChanges(changes: SimpleChanges) {
         console.log(`ngOnChanges - data is ${this.data}`);
+        for (let key in changes) {
+            console.log(`
+            ${key} changed.
+            Current: ${changes[key].currentValue}.
+            Previous: ${changes[key].previousValue}
+            `);
+        }
     }
 
     ngOnInit() {
