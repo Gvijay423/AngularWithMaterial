@@ -1,2 +1,5 @@
 <quiz-form (quizCreated)="addQuiz($event)"></quiz-form>
-<quiz *ngFor="let q of quizlist" [quiz]="q"></quiz>
+<quiz *ngFor="let q of quizlist" [quiz]="q">
+    <h4 class="question">{{q.question}}</h4>
+    <span [hidden]= "q.hide" class="answer">{{q.answer}}</span>
+</quiz>

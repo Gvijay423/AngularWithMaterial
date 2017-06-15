@@ -1,5 +1,13 @@
 ﻿<md-card>
-    <h4>{{data.question}}</h4>
-    <p [hidden]= "data.hide">{{data.answer}}</p>
-    <button md-raised-button (click)="data.toggle()">{{data.buttonText}}</button>
+    <md-card-title>
+    <!--<h4>{{data.question}}</h4>-->
+    <ng-content select=".question"></ng-content>
+    </md-card-title>
+    <md-card-content>
+    <!--<p [hidden]= "data.hide">{{data.answer}}</p>-->
+    <ng-content select=".answer"></ng-content>
+    </md-card-content>
+    <md-card-actions>
+        <button md-raised-button (click)="data.toggle()">{{data.buttonText}}</button>
+    </md-card-actions>
 </md-card>
