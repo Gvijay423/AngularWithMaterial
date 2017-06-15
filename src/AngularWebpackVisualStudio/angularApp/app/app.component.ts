@@ -1,5 +1,7 @@
 ﻿import {Component} from '@angular/core';
 
+import {Quiz} from './shared/quiz';
+
 import './app.component.scss';
 import '../style/app.scss';
 
@@ -9,5 +11,5 @@ import '../style/app.scss';
 })
 
 export class AppComponent {
-
+    quiz: Quiz = new Quiz("Question 3", "Answer 3");
 }

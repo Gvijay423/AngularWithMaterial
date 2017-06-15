@@ -1,5 +1,15 @@
 <quiz-form (quizCreated)="addQuiz($event)"></quiz-form>
+<h4 #header>Accessing the ViewChild by Id</h4>
 <quiz *ngFor="let q of quizlist" [quiz]="q">
     <h4 class="question">{{q.question}}</h4>
     <span [hidden]= "q.hide" class="answer">{{q.answer}}</span>
 </quiz>
+
+<md-card>
+    <md-card-title>
+        <h4>Content Quiz</h4>        
+    </md-card-title>
+    <md-card-content>
+        <ng-content select="quiz"></ng-content>
+    </md-card-content>
+</md-card>

@@ -1,1 +1,6 @@
-﻿<quiz-list></quiz-list>
+﻿<quiz-list>
+    <quiz [quiz]="quiz">
+        <h5 class="question" #contentHeader>{{quiz.question}}</h5>
+        <span [hidden]= "quiz.hide" class="answer">{{quiz.answer}}</span>
+    </quiz>
+</quiz-list>
