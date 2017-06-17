@@ -12,6 +12,8 @@ import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import {NgForComponent} from './builtInDirectives/ngFor.component';
+import {NgForGroupedComponent} from './builtInDirectives/ngForGrouped.component';
 
 @NgModule({
     imports: [
@@ -22,7 +24,9 @@ import { AppComponent } from './app.component';
     ],
 
     declarations: [
-        AppComponent
+        AppComponent,
+        NgForComponent,
+        NgForGroupedComponent
     ],
 
     bootstrap: [AppComponent],
