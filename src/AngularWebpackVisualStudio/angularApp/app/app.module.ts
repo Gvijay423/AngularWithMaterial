@@ -12,9 +12,10 @@ import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import {NgForComponent} from './builtInDirectives/ngFor.component';
-import {NgForGroupedComponent} from './builtInDirectives/ngForGrouped.component';
-import {NgIfComponent} from './builtInDirectives/ngIf.component';
+import { NgForComponent } from './builtInDirectives/ngFor.component';
+import { NgForGroupedComponent } from './builtInDirectives/ngForGrouped.component';
+import { NgIfComponent } from './builtInDirectives/ngIf.component';
+import { NgSwitchComponent } from './builtInDirectives/ngSwitch.component';
 
 @NgModule({
     imports: [
@@ -28,7 +29,8 @@ import {NgIfComponent} from './builtInDirectives/ngIf.component';
         AppComponent,
         NgForComponent,
         NgForGroupedComponent,
-        NgIfComponent
+        NgIfComponent,
+        NgSwitchComponent
     ],
 
     bootstrap: [AppComponent],
