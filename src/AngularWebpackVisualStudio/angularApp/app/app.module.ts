@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import {NgForComponent} from './builtInDirectives/ngFor.component';
 import {NgForGroupedComponent} from './builtInDirectives/ngForGrouped.component';
+import {NgIfComponent} from './builtInDirectives/ngIf.component';
 
 @NgModule({
     imports: [
@@ -26,7 +27,8 @@ import {NgForGroupedComponent} from './builtInDirectives/ngForGrouped.component'
     declarations: [
         AppComponent,
         NgForComponent,
-        NgForGroupedComponent
+        NgForGroupedComponent,
+        NgIfComponent
     ],
 
     bootstrap: [AppComponent],
