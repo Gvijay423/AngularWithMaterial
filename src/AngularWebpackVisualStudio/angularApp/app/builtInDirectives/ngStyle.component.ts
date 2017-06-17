@@ -9,14 +9,14 @@ import { Component, OnInit } from '@angular/core';
             </md-card-title>
             <md-card-content>
                 <md-list  *ngFor="let person of people">
-                    <md-list-item [ngStyle]="{'color':getColor(person.country)}">
+                    <md-list-item [ngStyle]="{'color':getColor(person.country), 'font-size.px': 24}">
                         {{person.name}} ({{person.country}})
                     </md-list-item>
                 </md-list>
             </md-card-content>
         </md-card>
-    `                //         Alternative Syntax
-                    //     <md-list-item [style.color]="getColor(person.country)">
+    `                //         Alternative Syntax  [style.property]
+                    //     <md-list-item [style.color]="getColor(person.country)" [style.font-size.px]="42">
                     //     {{person.name}} ({{person.country}})
                     // </md-list-item>
 })
