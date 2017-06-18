@@ -45,8 +45,8 @@ export class NgStyleComponent {
         }
     ];
 
-    getColor(country:string){
-        switch(country){
+    getColor(country: string) {
+        switch (country) {
             case "UK":
                 return "green";
             case "India":
