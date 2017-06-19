@@ -17,7 +17,8 @@ import { NgForGroupedComponent } from './builtInDirectives/ngForGrouped.componen
 import { NgIfComponent } from './builtInDirectives/ngIf.component';
 import { NgSwitchComponent } from './builtInDirectives/ngSwitch.component';
 import { NgStyleComponent } from './builtInDirectives/ngStyle.component';
-import { NgClassComponent } from './builtInDirectives/ngClass.component'
+import { NgClassComponent } from './builtInDirectives/ngClass.component';
+import { NgNonBindableComponent } from './builtInDirectives/ngNonBindable.component';
 
 @NgModule({
     imports: [
@@ -34,7 +35,8 @@ import { NgClassComponent } from './builtInDirectives/ngClass.component'
         NgIfComponent,
         NgSwitchComponent,
         NgStyleComponent,
-        NgClassComponent
+        NgClassComponent,
+        NgNonBindableComponent
     ],
 
     bootstrap: [AppComponent],
