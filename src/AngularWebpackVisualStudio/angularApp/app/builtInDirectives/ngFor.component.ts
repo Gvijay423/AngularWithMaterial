@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class NgForComponent {
-    people:any[] =[
+    people: any[] = [
         {
             "name": "Raju"
         },

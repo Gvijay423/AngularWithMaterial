@@ -19,6 +19,7 @@ import { NgSwitchComponent } from './builtInDirectives/ngSwitch.component';
 import { NgStyleComponent } from './builtInDirectives/ngStyle.component';
 import { NgClassComponent } from './builtInDirectives/ngClass.component';
 import { NgNonBindableComponent } from './builtInDirectives/ngNonBindable.component';
+import { CardHoverDirective } from './customDirective/card-hover.directive';
 
 @NgModule({
     imports: [
@@ -36,7 +37,8 @@ import { NgNonBindableComponent } from './builtInDirectives/ngNonBindable.compon
         NgSwitchComponent,
         NgStyleComponent,
         NgClassComponent,
-        NgNonBindableComponent
+        NgNonBindableComponent,
+        CardHoverDirective
     ],
 
     bootstrap: [AppComponent],

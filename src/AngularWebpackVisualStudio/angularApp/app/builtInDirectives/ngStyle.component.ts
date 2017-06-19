@@ -22,7 +22,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class NgStyleComponent {
-    people:any[] =[
+    people: any[] = [
         {
             "name": "Raju",
             "age": 25,
@@ -45,8 +45,8 @@ export class NgStyleComponent {
         }
     ];
 
-    getColor(country:string){
-        switch(country){
+    getColor(country: string) {
+        switch (country) {
             case "UK":
                 return "green";
             case "India":

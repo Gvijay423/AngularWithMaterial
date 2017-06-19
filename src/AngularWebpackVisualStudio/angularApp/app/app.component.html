@@ -11,3 +11,12 @@
 <ngclass-example></ngclass-example>
 
 <ngnonbindable-example></ngnonbindable-example>
+
+<md-card [cardHover] = "{querySelector: 'md-card-content'}">
+    <md-card-title>
+        Custom Directive
+    </md-card-title>
+    <md-card-content [style.display]="'none'">
+        Content
+    </md-card-content>
+</md-card>

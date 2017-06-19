@@ -30,7 +30,7 @@ import './ngDirectives.scss';
 })
 
 export class NgSwitchComponent {
-    people:any[] =[
+    people: any[] = [
         {
             "name": "Raju",
             "age": 25,

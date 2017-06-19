@@ -28,7 +28,7 @@ import { Component, OnInit } from '@angular/core';
         //     <md-card-content>
         //         <md-list  *ngFor="let person of people">
         //             <md-list-item [class.red]="person.country === 'UK'"
-        //                           [class.blue]="person.country === 'US'"                           
+        //                           [class.blue]="person.country === 'US'"
         //                           [class.green]="person.country === 'India'">
         //                 {{person.name}} ({{person.country}})
         //             </md-list-item>
@@ -38,7 +38,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class NgClassComponent {
-    people:any[] =[
+    people: any[] = [
         {
             "name": "Raju",
             "age": 25,
