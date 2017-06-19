@@ -19,7 +19,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class NgIfComponent {
-        people:any[] =[
+        people: any[] = [
         {
             "name": "Raju",
             "age": 25

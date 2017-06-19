@@ -22,7 +22,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class NgStyleComponent {
-    people:any[] =[
+    people: any[] = [
         {
             "name": "Raju",
             "age": 25,
