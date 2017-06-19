@@ -1,1 +1,47 @@
-﻿<h1>Hello World !</h1>
+﻿<h1>Pipes</h1>
+<md-tab-group>
+    <md-tab label="Currency Pipe">
+        <md-card>
+            <md-card-content>
+                <md-list>
+                    <md-list-item>
+                        <pre ngNonBindable>{{1234.56 | currency: 'USD'}} - </pre>
+                        <p>{{1234.56 | currency: 'USD'}}</p>
+                    </md-list-item>
+                    <md-list-item>
+                        <pre ngNonBindable>{{1234.56 | currency: 'USD': true}} - </pre>
+                        <p>{{1234.56 | currency: 'USD': true}}</p>
+                    </md-list-item>
+                    <md-list-item>
+                        <pre ngNonBindable>{{1234.56 | currency: 'USD' | lowercase}} - </pre>
+                        <p>{{1234.56 | currency: 'USD' | lowercase}}</p>
+                    </md-list-item>
+                </md-list>
+            </md-card-content>
+        </md-card>
+    </md-tab>
+    <md-tab label="Date Pipe">
+        <md-card>
+            <md-card-content>
+                <md-list>
+                    <md-list-item>
+                        <pre ngNonBindable>{{dateNow | date: 'shortTime'}} - </pre>
+                        <p>{{dateNow | date: 'shortTime'}}</p>
+                    </md-list-item>
+                    <md-list-item>
+                        <pre ngNonBindable>{{dateNow | date: 'fullDate'}} - </pre>
+                        <p>{{dateNow | date: 'fullDate'}}</p>
+                    </md-list-item>
+                    <md-list-item>
+                        <pre ngNonBindable>{{dateNow | date: 'shortDate'}} - </pre>
+                        <p>{{dateNow | date: 'shortDate'}}</p>
+                    </md-list-item>
+                    <md-list-item>
+                        <pre ngNonBindable>{{dateNow | date: 'd/M/y'}} - </pre>
+                        <p>{{dateNow | date: 'd/M/y'}}</p>
+                    </md-list-item>
+                </md-list>
+            </md-card-content>
+        </md-card>
+    </md-tab>
+</md-tab-group>

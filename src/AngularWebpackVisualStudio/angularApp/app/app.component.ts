@@ -9,5 +9,5 @@ import '../style/app.scss';
 })
 
 export class AppComponent {
-
+    public dateNow: Date = new Date();
 }
