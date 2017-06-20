@@ -12,6 +12,7 @@ import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { AsyncPipeComponent } from './asyncPipe/async-pipe.component';
 
 @NgModule({
     imports: [
@@ -22,7 +23,8 @@ import { AppComponent } from './app.component';
     ],
 
     declarations: [
-        AppComponent
+        AppComponent,
+        AsyncPipeComponent
     ],
 
     bootstrap: [AppComponent],

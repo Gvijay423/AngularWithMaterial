@@ -81,11 +81,11 @@
             <md-card-content>
                 <md-list>
                     <md-list-item>
-                        <pre>RAJU - </pre>
+                        <pre ngNonBindable>{{"RAJU" | lowercase}} - </pre>
                         <p>{{"RAJU" | lowercase}}</p>
                     </md-list-item>
                     <md-list-item>
-                        <pre>raju - </pre>
+                        <pre ngNonBindable>{{"raju" | uppercase}} - </pre>
                         <p>{{"raju" | uppercase}}</p>
                     </md-list-item>
                 </md-list>
@@ -131,9 +131,7 @@
         <md-tab label="Async Pipe">
         <md-card>
             <md-card-content>
-                <md-list>
-                    
-                </md-list>
+                <async-pipe></async-pipe>
             </md-card-content>
         </md-card>
     </md-tab>
