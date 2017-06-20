@@ -12,6 +12,7 @@ import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { ModelDrivenFormComponent } from './Forms/model-driven-form.component';
 
 @NgModule({
     imports: [
@@ -22,7 +23,8 @@ import { AppComponent } from './app.component';
     ],
 
     declarations: [
-        AppComponent
+        AppComponent,
+        ModelDrivenFormComponent
     ],
 
     bootstrap: [AppComponent],

@@ -1,0 +1,29 @@
+<form>
+    <div>
+        <md-input-container>
+            <input mdInput #firstName placeholder="First Name">
+        </md-input-container>
+    </div>
+    <div>
+    <md-input-container>
+        <input mdInput #lastName placeholder="Last Name">
+    </md-input-container>
+    </div>
+    <div>
+    <md-input-container>
+        <input mdInput #email placeholder="Email" type="email">
+    </md-input-container>
+    </div>
+    <div>
+    <md-input-container>
+        <input mdInput #password placeholder="Password">
+    </md-input-container>
+    </div>
+    <div>
+    <md-select placeholder="Select Language">
+        <md-option *ngFor="let language of languages" [value]="language">
+            {{language}}
+        </md-option>
+    </md-select>
+    </div>
+</form>
