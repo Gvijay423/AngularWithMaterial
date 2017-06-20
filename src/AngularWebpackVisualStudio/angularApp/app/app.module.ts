@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { AsyncPipeComponent } from './asyncPipe/async-pipe.component';
+import { DefaultPipe } from './customPipe/default.pipe';
 
 @NgModule({
     imports: [
@@ -24,7 +25,8 @@ import { AsyncPipeComponent } from './asyncPipe/async-pipe.component';
 
     declarations: [
         AppComponent,
-        AsyncPipeComponent
+        AsyncPipeComponent,
+        DefaultPipe
     ],
 
     bootstrap: [AppComponent],

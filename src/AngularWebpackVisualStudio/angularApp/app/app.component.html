@@ -128,10 +128,21 @@
             </md-card-content>
         </md-card>
     </md-tab>
-        <md-tab label="Async Pipe">
+    <md-tab label="Async Pipe">
         <md-card>
             <md-card-content>
                 <async-pipe></async-pipe>
+            </md-card-content>
+        </md-card>
+    </md-tab>
+    <md-tab label="Custom Pipe">
+        <md-card>
+            <md-card-content>
+                <pre ngNonBindable>{{ customPipeString | default: "Default String"}}</pre>
+                <p>{{ customPipeString | default: "Default String"}}</p>
+                <br>
+                <pre ngNonBindable>{{"" | default: "Default String"}}</pre>
+                <p>{{ "" | default: "Default String"}}</p>
             </md-card-content>
         </md-card>
     </md-tab>

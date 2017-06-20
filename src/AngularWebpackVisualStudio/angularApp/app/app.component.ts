@@ -17,4 +17,5 @@ export class AppComponent {
             "bad": "no"
         }
     };
+    public customPipeString = "Hello World";
 }
