@@ -143,6 +143,9 @@
                 <br>
                 <pre ngNonBindable>{{"" | default: "Default String"}}</pre>
                 <p>{{ "" | default: "Default String"}}</p>
+                <br>
+                <pre ngNonBindable>{{"" | default: "Default String": true}} - Multiple Parameters (if true it will the append the "Appended String to the Result")</pre>
+                <p>{{ "" | default: "Default String": true}}</p>
             </md-card-content>
         </md-card>
     </md-tab>
