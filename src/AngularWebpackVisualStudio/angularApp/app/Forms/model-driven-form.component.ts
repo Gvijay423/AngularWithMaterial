@@ -42,6 +42,7 @@ export class ModelDrivenFormComponent implements OnInit {
     onSubmit() {
         if (this.myForm.valid) {
             console.log("Form Submitted");
+            this.myForm.reset();
         } else {
             console.log("Form Contains Errors");
         }

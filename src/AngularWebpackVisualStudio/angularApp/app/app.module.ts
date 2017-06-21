@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { ModelDrivenFormComponent } from './Forms/model-driven-form.component';
 import { ReactiveModelFormComponent } from './Forms/reactive-model-form.component';
+import { TemplateDrivenFormComponent } from './Forms/template-driven-form.component';
 
 @NgModule({
     imports: [
@@ -29,7 +30,8 @@ import { ReactiveModelFormComponent } from './Forms/reactive-model-form.componen
     declarations: [
         AppComponent,
         ModelDrivenFormComponent,
-        ReactiveModelFormComponent
+        ReactiveModelFormComponent,
+        TemplateDrivenFormComponent
     ],
 
     bootstrap: [AppComponent],

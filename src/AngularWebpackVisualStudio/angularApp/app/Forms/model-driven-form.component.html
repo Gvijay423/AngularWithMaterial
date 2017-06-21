@@ -12,15 +12,15 @@
     <div>
     <md-input-container>
         <input mdInput placeholder="Email" type="email" formControlName="email">
-        <md-error *ngIf="email.errors?.required">This field is required.</md-error>
-        <md-error *ngIf="email.errors?.pattern">Email provided is not valid</md-error>
+            <md-error *ngIf="email.errors?.required">This field is required.</md-error>
+            <md-error *ngIf="email.errors?.pattern">Email provided is not valid</md-error>
     </md-input-container>
     </div>
     <div>
     <md-input-container>
         <input mdInput placeholder="Password" formControlName="password">
-        <md-error *ngIf="password.errors?.required">This field is required.</md-error>
-        <md-error *ngIf="password.errors?.minlength">Password must be {{password.errors.minlength.requiredLength}} characters long</md-error>
+            <md-error *ngIf="password.errors?.required">This field is required.</md-error>
+            <md-error *ngIf="password.errors?.minlength">Password must be {{password.errors.minlength.requiredLength}} characters long</md-error>
     </md-input-container>
     </div>
     <div>
@@ -33,7 +33,7 @@
     <div>
         <button md-raised-button type="submit">Submit</button>
     </div>
-</form>
+</form>     
 
 <br>
 <pre>{{myForm.value | json}}</pre>

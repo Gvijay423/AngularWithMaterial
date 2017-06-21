@@ -1,0 +1,36 @@
+<form #f="ngForm" (ngSubmit)="onSubmit()" novalidate>
+    <div ngModelGroup="name">
+        <md-input-container>
+            <input mdInput #firstName="ngModel" placeholder="First Name" name="firstName" [(ngModel)]="model.firstName" required>
+            <md-error>First Name is required.</md-error>
+        </md-input-container>
+        <md-input-container>
+            <input mdInput #lastName="ngModel" placeholder="Last Name" name="lastName" [(ngModel)]="model.lastName" required>
+            <md-error>Last Name is required.</md-error>
+        </md-input-container>
+    </div>
+    <md-input-container>
+        <input mdInput type="email" #email="ngModel" placeholder="Email Address" name="email" [(ngModel)]="model.email" required pattern="[^ @]*@[^ @]*">
+        <md-error *ngIf="email.errors?.required">Email Address is required.</md-error>
+        <md-error *ngIf="email.errors?.pattern">Email provided is not valid</md-error>
+    </md-input-container>
+    <md-input-container>
+        <input mdInput type="password" #password="ngModel" placeholder="Password" name="password" [(ngModel)]="model.password" required minlength="8">
+        <md-error *ngIf="password.errors?.required">Password is required.</md-error>
+        <md-error *ngIf="password.errors?.minlength">Password must be {{password.errors.minlength.requiredLength}} characters long</md-error>
+    </md-input-container>
+    <md-select #language="ngModel" placeholder="Please select a language" name="language" [(ngModel)]="model.language">
+        <md-option *ngFor="let lang of languages" [value]="lang">
+            {{lang}}
+        </md-option>
+    </md-select>
+    <div>
+        <button type="submit" md-raised-button>Submit</button>
+    </div>
+</form>
+
+<pre>{{f.value | json}}</pre>
+
+<pre>Valid? {{f.form.controls.email?.valid}}</pre>
+<pre>Dirty? {{f.form.controls.email?.dirty}}</pre>
+<pre>Touched? {{f.form.controls.email?.touched}}</pre>
