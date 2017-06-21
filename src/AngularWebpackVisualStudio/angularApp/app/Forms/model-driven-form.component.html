@@ -1,29 +1,41 @@
-<form>
-    <div>
+<form [formGroup]="myForm" novalidate (ngSubmit)="onSubmit()">
+    <div formGroupName="name">
         <md-input-container>
-            <input mdInput #firstName placeholder="First Name">
+            <input mdInput placeholder="First Name" formControlName="firstName">
+            <md-error>This field is required.</md-error>
+        </md-input-container>
+        <md-input-container>
+            <input mdInput placeholder="Last Name" formControlName="lastName">
+            <md-error>This field is required.</md-error>
         </md-input-container>
     </div>
     <div>
     <md-input-container>
-        <input mdInput #lastName placeholder="Last Name">
+        <input mdInput placeholder="Email" type="email" formControlName="email">
+        <md-error *ngIf="email.errors?.required">This field is required.</md-error>
+        <md-error *ngIf="email.errors?.pattern">Email provided is not valid</md-error>
     </md-input-container>
     </div>
     <div>
     <md-input-container>
-        <input mdInput #email placeholder="Email" type="email">
+        <input mdInput placeholder="Password" formControlName="password">
+        <md-error *ngIf="password.errors?.required">This field is required.</md-error>
+        <md-error *ngIf="password.errors?.minlength">Password must be {{password.errors.minlength.requiredLength}} characters long</md-error>
     </md-input-container>
     </div>
     <div>
-    <md-input-container>
-        <input mdInput #password placeholder="Password">
-    </md-input-container>
-    </div>
-    <div>
-    <md-select placeholder="Select Language">
-        <md-option *ngFor="let language of languages" [value]="language">
-            {{language}}
+    <md-select placeholder="Select Language" formControlName="language">
+        <md-option *ngFor="let lang of languages" [value]="lang">
+            {{lang}}
         </md-option>
     </md-select>
     </div>
+    <div>
+        <button md-raised-button type="submit">Submit</button>
+    </div>
 </form>
+
+<br>
+<pre>{{myForm.value | json}}</pre>
+<pre>{{email.errors | json}}</pre>
+<pre>{{password.errors | json}}</pre>
