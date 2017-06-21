@@ -20,4 +20,5 @@ export class TemplateDrivenFormComponent {
         } else {
             console.log("Form Contains Errors");
         }
+    }
 }
